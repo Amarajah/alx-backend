@@ -23,7 +23,7 @@ def index() -> str:
     """
     Handles route
     """
-    return render_template('1-index.html')
+    return render_template('2-index.html')
 
 
 @babel.localeselector
