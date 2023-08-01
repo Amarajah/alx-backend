@@ -33,9 +33,7 @@ def get_locale():
     request's Accept-Language header
     The `best_match` method returns the best-matching language
     code from the supported_languages list"""
-    supported_languages = app.config['LANGUAGES']
-    user_languages = request.accept_languages
-    return user_languages.best_match(supported_languages)
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 if __name__ == "__main__":
