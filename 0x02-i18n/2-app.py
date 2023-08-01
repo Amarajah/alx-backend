@@ -2,7 +2,7 @@
 """ basic Flask app"""
 
 from flask import Flask, render_template, request
-from flask_babel import Babel, babel_localeselector
+from flask_babel import Babel
 
 app = Flask(__name__)
 
