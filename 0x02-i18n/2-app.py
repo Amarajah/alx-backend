@@ -27,7 +27,7 @@ def index() -> str:
 
 
 @babel.localeselector
-def get_locale(object):
+def get_locale():
     """Get the list of supported languages from the app's config
     Extract the user's preferred languages from the
     request's Accept-Language header
